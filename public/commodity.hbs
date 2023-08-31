@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+          body{
+      margin: 0;
+      padding: 0:
+    }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+        .title {
+            margin: 17px auto;
+            text-align: center;
+            font-size: 2em;
+            font-family:'Lato', sans-serif;
+            margin-top:42px;
+            color:#6a936d}
+
+            .container {
+                border: 2px;
+                margin: 0px 188px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+
+            .linker {
+                margin: 2em 2em;
+                border: none;
+                height: 5.5em;
+                width: 17em;
+
+            }
+
+            .shadow {
+                box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 15%) !important;
+            }
+
+            .card-title {
+                font-size: 1rem;
+                
+            }
+
+
+            .btn:active {
+                box-shadow: box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+                transform: scale(93%);
+
+            }
+
+            .hello {
+                display: flex;
+                align-self: center;
+                justify-content: center;
+            }
+
+            {{>mynavcss}}
+    </style>
+</head>
+
+
+
+
+<body>
+    
+   {{# if user }}
+	{{>mynavmarket username=user }}
+ {{else }}
+	{{>mynavmarketlogin }}
+{{/if}}
+
+    {{!-- <nav class="mynav" style="background-color: black;">
+
+            <div class="navbar-brand"><img src="/images/mylogo.png" alt="" style="      height: 4rem;
+    margin-top: -14px;
+
+        "><span style="color:white">AgroIndia</span></div>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 0;padding:0;">
+                <li class="nav-item">
+                    <a style="color:white" class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:white" class="nav-link" href="/news">Agro News</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:white" class="nav-link" href="/tools">Agro Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:white" class="nav-link" href="/marketprices">Market Price</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:white" class="nav-link" href="/fertilizer-predict">Fertilizer Prediction</a>
+                </li>
+
+
+            </ul>
+
+        </nav> --}}
+    <div>
+        <p class="title">Please select the Commodity</p>
+    </div>
+
+    <div >
+        <form  class="container" action="/prices">
+            {{#each commodity3}}
+
+            <div class="btn">
+
+                <button type="submit" class="linker shadow" value={{this.commodity}} onclick="getDetails(event)">
+
+                    <p class="card-title" disabled value={{this.commodity}}>{{this.commodity}}</p>
+
+                </button>
+            </div>
+
+            {{/each}}
+        </form>
+    </div>
+
+
+
+    <script>
+
+
+        function getDetails(event) {
+            let item = event.target.innerHTML;
+            console.log(item);
+
+            fetch("http://localhost:3001/pricesmid",
+                {
+                    method: "post",
+
+                    body: JSON.stringify({
+                        item: item,
+                    }),
+
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                })
+                .then(response => response.json())
+                .then(json => console.log(json));
+
+        }
+    </script>
+    <script>
+      const kiran = ()=>{
+        document.getElementById("abc").innerHTML=null;
+      }
+    </script>
+</body>
+
+</html>

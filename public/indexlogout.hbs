@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #88A201;
+    }
+
+    .main {
+
+        background-image: url("./images/back.png");
+        height: 600px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        justify-content: center;
+        display: grid;
+        height: 100vh;
+    }
+
+    .mynav {
+
+        height: 6rem;
+        width: 98vw;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .navbar-brand {
+        text-align: center;
+        margin: 1.5rem 2rem;
+        height: 3.5rem;
+        width: 12rem;
+        text-decoration: none;
+        list-style: none;
+        font-size: 2.3rem;
+        font-weight: bold;
+        margin-right: 3em;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    nav a:hover {
+        color: blueviolet;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+
+
+    }
+
+    li {
+        text-align: center;
+        margin: 2rem 1.5rem;
+        height: 2.5rem;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 19px;
+        font-weight: bold;
+        color: black;
+        font-family: 'Baloo Bhai 2', cursive;
+
+    }
+
+
+
+    .container {
+
+        background-color: #D8F2FF;
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        border: 2px solid black;
+        justify-content: center;
+        /* align-items: center; */
+        height: 21rem;
+        margin: 57px 2em;
+        border-radius: 19px;
+        box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        outline: none;
+        border: none;
+    }
+
+    .container:hover {
+        box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+        transform: scale(98%);
+
+    }
+
+
+    .help {
+        text-align: center;
+        margin: 0rem auto;
+        font-size: 3.3rem;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .card-text {
+        margin: 16px;
+        font-size: 20px;
+    }
+
+
+
+    .time {
+        margin: 16px;
+        font-size: 15px;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .newsImage {
+        height: 9em;
+        width: 13em;
+        image-rendering: crisp-edges;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        margin: 1rem 1rem;
+    }
+
+
+    .imgContainer {
+        width: 100%;
+        height: 15em;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    hr {
+        margin: 0 69px;
+        height: 0;
+        background-color: grey;
+    }
+
+    .card-body {
+        position: relative;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        height: 9em;
+        text-align: center;
+    }
+
+    .news-head {
+        text-align: center;
+        margin: auto;
+        font-size: 49px;
+        margin-top: 0.3em;
+        margin-bottom: 0.7em;
+    }
+
+
+    .read-more {
+        position: absolute;
+        right: 31px;
+        bottom: 17px;
+        height: 31px;
+        width: 104px;
+        position: absolute;
+        right: 31px;
+        bottom: 17px;
+        height: 31px;
+        width: 104px;
+        color: white;
+
+        background-color: black;
+        border-radius: 7px;
+        font-style: bold;
+        font-style: bold;
+        font-size: 14px;
+    }
+
+    .cardholder {
+        display: flex;
+        flex-direction: row;
+        margin: 1em 6em;
+        padding: 1em;
+    }
+    }
+
+    .read-more {
+
+        right: 31px;
+        bottom: 17px;
+        height: 31px;
+        width: 104px;
+        color: white;
+        background-color: black;
+        border-radius: 7px;
+        font-style: bold;
+        font-style: bold;
+        font-size: 14px;
+    }
+
+    .log {
+        height: 2.3rem;
+        width: 5rem;
+        background-color: blue;
+        color: white;
+        border-radius: 8px;
+        margin: 30px 8px;
+        border: none;
+    }
+
+
+    footer {
+        width: 100%;
+        height: 6rem;
+        margin-top: 3em;
+        text-align: center;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    footer p {
+      margin: -1.3em auto;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: white;
+}
+    
+</style>
+
+
+<div class="main">
+
+
+    <nav class="mynav">
+
+        <div class="navbar-brand"><img src="/images/mylogo.png" alt="" style="      height: 5rem;
+    margin-top: -17px;
+
+        "><span>AgroIndia</span></div>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/news">Agro News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/tools">Agro Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/marketprices">Market Price</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/fertilizer-predict">Fertilizer Prediction</a>
+            </li>
+
+
+        </ul>
+
+        <div style="margin-left:12em;    margin-left: 0;
+    position: absolute;
+    right: 2em;
+    display: flex;
+    flex-direction: row;
+    margin-top:0;">
+             <h6 class="text-center text-white mt-1 mr-2" id="abcd" style="margin-top: 36px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    margin-right: 24px;
+}"><div style="    display: flex;
+    flex-direction: row;
+}"><img src="./images/id.png" alt="" style="    height: 48px;
+    margin-top: -11px;
+    margin-right: 7px;
+}"><div>{{user}}</div></div></h6>
+               <form method="POST" action="/">
+              <button type="submit"  style="color:#E7F8FF;font-size: 1.4em;color: #E7F8FF;
+    font-size: 1.05rem;
+    font-weight: bold;
+}"class="btn btn-primary mx-2 mt-0 log" onclick="kiran() ">LogOut</button>
+            </form>
+                {{!-- <button class="log" onclick="kiran"><a href="/" style="color:#E7F8FF;font-size: 1.4em;">LogOut</a></button> --}}
+                
+            
+        </div>
+
+
+    </nav>
+
+
+</div>
+
+<h2 class="help">How we Can Help You ?</h2>
+
+
+<div class="cardholder">
+
+    <div class="container">
+        <a href="/tools">
+            <div class="imgContainer">
+                <img id="articleImage" src="./images/instru.png" class="newsImage" alt="...">
+            </div>
+        </a>
+
+        <div class="card-body">
+            <h5 id="articleTitle" style="font-size: 1.5rem;font-family: 'Baloo Bhai 2', cursive;
+        margin: 1em;">Agro Tools</h5>
+
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <a href="/news">
+            <div class="imgContainer">
+                <img id="articleImage" src="./images/news.png" class="newsImage" alt="...">
+            </div>
+        </a>
+        <div class="card-body">
+            <h5 id="articleTitle" style="font-size: 1.5rem;font-family: 'Baloo Bhai 2', cursive;
+        margin: 1em;">Agro News</h5>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <a href="/marketprices">
+            <div class="imgContainer">
+                <img id="articleImage" src="./images/price.png" class="newsImage" alt="...">
+            </div>
+        </a>
+        <div class="card-body">
+            <h5 id="articleTitle" style="font-size: 1.5rem; font-family: 'Baloo Bhai 2', cursive;
+        margin: 1em;">Market Price</h5>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <a href="/#">
+            <div class="imgContainer">
+                <img id="articleImage" src="./images/predict.png" class="newsImage" alt="...">
+            </div>
+        </a>
+        <div class="card-body">
+            <h5 id="articleTitle" style="font-size: 1.5rem;font-family: 'Baloo Bhai 2', cursive;
+        margin: 2em 1em;">Fertilizer Prediction</h5>
+
+        </div>
+
+    </div>
+
+</div>
+
+{{>footer}}
+
+ <script>
+      const kiran = ()=>{
+         console.log("----------------------------------------------------")
+        document.getElementById("abcd").innerHTML=null;
+      }
+    </script>
+
+</body>
+
+</html>

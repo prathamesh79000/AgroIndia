@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroIndia-News</title>
+    {{!--
+    <link rel="stylesheet" href="./index.css"> --}}
+    <style>
+        {{>css}}
+    {{>mynavcss}}
+    </style>
+
+</head>
+
+
+<body>
+
+    
+
+   {{# if user }}
+	{{>mynav username=user }}
+ {{else }}
+	{{>mynavlogin }}
+{{/if}}
+    
+        <h2 class="news-head">Tools and Equipments</h2>
+
+
+        <div class="container" style="height:auto ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:2rem 0;">
+                <img id="articleImage" src="/images/gyrovator.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: Rs. 89,000</h6>
+                </div>
+
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0 ;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Mahindra Gyrovator ZLX 145</h5>
+                <p id="articleContent" class="card-text">The Mahindra ZLX Gyrovator is equipped with Multi Speed Drive.
+                    It
+                    has various useful
+                    features including multi-depth adjustment, duo cone mechanical watertight seal which is very
+                    suitable
+                    for
+                    dry and wetland applications.
+                    This soil master implement has 1.25 meters of overall working depth. This can easily works with 540
+                    RPM
+                    tractor models.
+                    It is generally comes with 36-L type blades, has a 4-speed standard gearbox, and comes with advanced
+                    gear
+                    drive transmission.
+                    It is most effective for pubbling due to better churning of soil and less slippage than disc harrow.
+                    This implement is most compatible with 30 HP – 60 HP tractor models. Mahindra ZLX Gyrovator is
+                    available
+                    at a price of approximately Rs. 89,000* in India, making it very reasonable.</p>
+
+            </div>
+        </div>
+
+
+
+        <div class="container" style="height:auto ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:2rem 0;">
+                <img id="articleImage" src="/images/shaktiman.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: Rs 1.03 lakhs</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0 ;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Shaktiman Regular Light</h5>
+                <p id="articleContent" class="card-text">
+                    The Shaktiman garden rotavator is a widely used machine by Indian farmers. It is specially
+                    manufactured
+                    for use in wetlands, and to handle light and medium soil types.
+                    I.Shaktiman Regular Light has a tilling width ranging between 1307mm-2107 mm depending upon
+                    different
+                    variants.
+                    II.It is manufactured using high-tech precision engineering, which includes CNC machines, laser
+                    cutting
+                    machines & robotic welding.
+                    III.It has a maximum working depth of 190mm and is equipped with a Cat-II, 3 point hitch.
+                    IV.The implement is easily compatible with 25 HP-65 HP tractor models.
+                    V.A Shaktiman Regular Light rotavator comprising of 48 blades costs approximately Rs 1.03 lakhs* in
+                    India.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="container" style="height:auto ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:2rem 0;">
+                <img id="articleImage" src="/images/shaktiman.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: Rs. 90,000</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0 ;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Fieldking Regular Multi Speed</h5>
+                <p id="articleContent" class="card-text">
+                    Fieldking regular multi speed can loosen and aerate soil up to 7 inches deep. The heavy duty spring
+                    assembly in a plank ensures perfectly levelled and finished seedbed, which improves your farm’s
+                    productivity.
+
+                    This rotavator model by fieldking has a tillage width ranging between 100 cm – 225 cm depending upon
+                    the
+                    variant.
+                    Fieldking rotavator multi speed equips L, C and J types of blades with both Shear bolt/ Slip Clutch
+                    Gearbox overload protection.
+                    It comes with advanced gear drive transmission and 4-speed gearbox.
+                    It can efficiently work with 25 HP – 70 HP tractor models.
+                    A Fieldking rotavator multi speed is available at an affordable price of approximately Rs. 90,000*
+                    in
+                    India.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="container" style="height:auto ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:1rem 0;">
+                <img id="articleImage" src="/images/sonalika.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 2em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;margin-bottom: 1em;">Price: Rs 1.11 lakhs</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0 ;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Sonalika Multi Speed Series</h5>
+                <p id="articleContent" class="card-text">
+                    Sonalika is a well-trusted brand among Indian farmers and manufactures best-in-class, extremely
+                    profitable, and highly durable farm implements to help enhance your farms’ productivity.
+
+                    The implement is available in 3.5-7 inches size models.
+                    It offers 540-1000 high-quality blades, and gear drive side transmission.
+                    Sonalika Multi Speed Series has 98-200 tillage width and is compatible with 25 HP-70 HP tractor
+                    models.
+                    Sonalika Multi Speed Series price starts from Rs. 1.11 lakhs* in India, which is very fair
+                    considering
+                    the
+                    brand name and quality it offers.
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <div class="container" style="height:auto ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:2rem 0;">
+                <img id="articleImage" src="/images/machine5.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: Rs 1.05 lakhs</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0 ;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Landforce Vivo</h5>
+                <p id="articleContent" class="card-text">
+                    A Landforce Rotary Tiller is suitable for loose soil and is highly compatible with low HP tractors.
+                    It
+                    is
+                    beneficial and effective for puddling (paddy/rice field preparation with water).
+
+                    Landforce Vivo is available in several 4-6 feet variants with 4 inches to 6 inches working depth.
+                    The implement comes with a multi-speed or single speed gearbox and improved gear drive.
+                    Landforce Vivo has with 30-42 blades that are fairly compatible with 25 HP - 35 HP tractor models.
+                    The Landforce Vivo rotary tiller provides you with the best value for your money. Currently, this
+                    Landforce implement is available at a very reasonable price in India.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="container" style="height:auto  ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:1rem 0;">
+                <img id="articleImage" src="/images/harrow1.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: Rs 15000-45000</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Mahindra Disc Harrow Tool</h5>
+                <p id="articleContent" class="card-text">
+                    Mahindra Disc Harrow is one of the famous Harrow tools in India. This implement offers the latest
+                    technology and is manufactured with quality material. It has 35 - 55 HP Power which offers
+                    fuel-efficient
+                    work and saves money. Mahindra Harrow price is available at an economical range. Harrow uses for
+                    better
+                    mixing of manure.Mahindra Disc Harrow is a tractor mounted implement attached on tow hook. Helps
+                    break
+                    the
+                    big clots of soil which emerge from the ploughing operations.
+                    Front discs have notches to cut any residual weed coming into the passage.
+                    Available with different disc sizes to suit the HP of tractor.
+                    Ensures effective cutting and mixing of stubbles and weeds with better mixing of manure.
+
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <div class="container" style="height:auto  ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:1rem 0;">
+                <img id="articleImage" src="/images/harrow2.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 1em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: Rs 1.05 lakhs</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0 ; background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Khedut Mounted Offset Cum Trailed Disc
+                    Harrow
+                </h5>
+                <p id="articleContent" class="card-text">
+                    Khedut Mounted Offset Cum Trailed Disc Harrow comes from the Khedut brand house famous for its
+                    superb
+                    quality niches. The disc type of this implement is notched disc in front gang & plain disc in a rear
+                    gang.
+                    Harrow Agriculture implement is used for commercial farming and provide productivity.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="container" style="height:auto  ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:2rem 0;">
+                <img id="articleImage" src="/images/shaktiman.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: Rs 1.35 lakhs</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0; background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Fieldking Power Harrow</h5>
+                <p id="articleContent" class="card-text">
+                    Fieldking Power Harrow is used due to its high working capacity and common uses of tractor’s fuel.
+                    This
+                    power harrow is used for preparing an area for plantations. Implement consist of multiple sets of
+                    blades,
+                    and a moveable side stone deflector is for safety by not allowing the stones to scatter. Power
+                    Harrow is
+                    used to turn, break, refine and even distribution of soil over the entire working width to create a
+                    perfect seed bed. It breaks up even the most compacted ground, often in single pass for preparing an
+                    area
+                    for plantation.
+                    Power Harrow consists of multiple set of blades which counter-rotate about a vertical axis, which
+                    leaves
+                    the soil with a softer look and granulated yet leveled appearance, as required for sowing seeds or
+                    seedlings.
+                    Rotors run on ball bearings for high power application.
+
+                </p>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="container" style="height:auto ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:2rem 0;">
+                <img id="articleImage" src="/images/Tiller.jpg"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: 90000 Rs</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 1em;margin-left:0 ;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Power Tiller</h5>
+                <p id="articleContent" class="card-text">
+                    Power Tiller a walking tractor widely used for rotary or revolving cultivation in wet puddle soil.
+                    For
+                    small & marginal farmers a Power Tiller is the best choice. It replaces the animal power more
+                    effectively
+                    & helps in raising demand for human labor. It is a machine compiled with a 1.5 HP engine & designed
+                    as
+                    such to push forward or backward various agricultural equipment. Power Tiller is capable to perform
+                    the
+                    operations of different farm implements like rotary, puddler, leveler, trailers, plow disc &
+                    thresher.
+                    One
+                    of the most important functions of Power Tiller is that it prepares an accurate seeded for the crop
+                    to
+                    be
+                    planted & warms the soil before planting by burying its ruminant into it. By controlling weeds it
+                    helps
+                    in
+                    the proper growth of the crops. To get the full detailed information regarding power tiller uses,
+                    check
+                    out below.
+
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <div class="container" style="height:auto  ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1.5em 1em; width:auto;margin:1rem 0;">
+                <img id="articleImage" src="/images/Tiller1.png"" class=" newsImage" alt="..."
+                    style="margin-bottom: 1em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: 24000-40000 Rs</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 1em;margin-left:0;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Multi Row Tiller</h5>
+                <p id="articleContent" class="card-text">
+                    Multi row cultivator is used for proper cutting and aeration of soil, which makes the soil more fine
+                    for
+                    better plantation.
+                    This is designed for light and medium soils.
+                    The spring steel tyne is so designed that it does not need separate spring.
+                    The tynes are adjustable and the residue/weed almost never gets entangled with tyne while ploughing.
+                    Optionally, crumbler helps to control the depth and level of the soil as well as convert the soil
+                    into
+                    fine particles.
+                    The coil shape tynes get strength because of unique design in which the stress prone areas resist
+                    any
+                    distorting forces
+
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <div class="container" style="height:auto ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:1rem 0;">
+                <img id="articleImage" src="/images/Harvestor.png"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: 18-24Lakh</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0 ;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Multi Crop Harvester</h5>
+                <p id="articleContent" class="card-text">
+                    HST (Hydrostatic transmission) with 42cc & electromagnetically operated valves for high efficiency
+                    and
+                    easy
+                    steering and operations in the field.
+                    Longer & wider rubber track causes less ground pressure which makes its operation smoother and
+                    quicker in
+                    swampy, uneven and wet fields.
+                    Vertical threshing rotor and strong concave sieves.
+                    2.2 meter cutter bar helps in harvesting more acres per hour.
+                    Larger feeding bridge with better feeding capacity.
+                    Compact Size body makes it convenient for working in uneven, wet, swampy and small fields
+                    The machine is light-weight which reduces the earth pressure and makes it convenient for the
+                    operation in
+                    swampy and wet fields
+                    This Multi Crop Combine Harvester is capable of harvesting multiple types of crops - paddy, wheat,
+                    corn,
+                    barley, pulses & soybean effectively and efficiently.
+
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <div class="container" style="height:auto ;width:71rem;border:5px;">
+
+            <div class="imgContainer" style="padding:1em 1em; width:auto;margin:1rem 0;">
+                <img id="articleImage" src="/images/Harvestor.png"" class=" newsImage" alt="..."
+                    style="margin-bottom: 3em;">
+
+                <div style="">
+                    <h6 style="text-align:center;font-size: 1.3em;">Price: 3-4Lakh</h6>
+                </div>
+            </div>
+
+            <div class="card-body" style="margin:1em;padding: 2em;margin-left:0 ;background-color: #abd1dc;">
+                <h5 id="articleTitle" style="font-size: 1.5rem; margin: 16px;">Square Baler</h5>
+                <p id="articleContent" class="card-text">
+                    The square baler is designed to collect and compress grass, hay or straw into bales.
+                    The large diameter of the feeder and its specially bent prongs guarantee continuous and clean
+                    pick-up at
+                    high operation speed.
+                    Slip clutch and shear bolt to secure the baler transmission under difficult operating conditions and
+                    high
+                    loads.
+                    The length of the bales can be adjusted in the range 0.3 up to 1.3 m.
+                    Adjustable drawbar to ensure correct hitching.
+
+                </p>
+
+            </div>
+        </div>
+
+
+
+
+ <script>
+      const kiran = ()=>{
+        document.getElementById("abc").innerHTML=null;
+      }
+    </script>
+   
+
+
+
+
+
+
+
+</body>
+
+</html>
